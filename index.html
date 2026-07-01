@@ -1,38 +1,284 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>MANTRA Education Academy</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MANTRA Education Academy | Home</title>
+
+<meta name="description" content="MANTRA Education Academy provides quality education, practical learning and career-focused courses.">
+
+<meta name="keywords" content="Education, Academy, Courses, Web Development, AI, Python">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f8fc;
+}
+
+/* Header */
+
+header{
+background:#003366;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+/* Banner */
+
+.hero{
+height:550px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("images/banner.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ff9800;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+font-size:18px;
+border-radius:30px;
+}
+
+.btn:hover{
+background:#e67e22;
+}
+
+/* About */
+
+.about{
+padding:70px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:38px;
+color:#003366;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:19px;
+line-height:30px;
+color:#555;
+}
+
+/* Courses */
+
+.courses{
+padding:70px 10%;
+background:white;
+text-align:center;
+}
+
+.courses h2{
+font-size:38px;
+margin-bottom:40px;
+color:#003366;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+width:280px;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#003366;
+margin-bottom:15px;
+}
+
+.card p{
+color:#666;
+line-height:24px;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <h1>MANTRA Education Academy</h1>
+<header>
 
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+<div class="logo">🎓 MANTRA Education Academy</div>
 
-    <hr>
+<nav>
 
-    <h2>Welcome</h2>
+<a href="index.html">Home</a>
 
-    <p>
-        Learn Web Development, Python, AI & ML and Data Science.
-    </p>
+<a href="about.html">About</a>
 
-    <h2>Courses Offered</h2>
+<a href="courses.html">Courses</a>
 
-    <ul>
-        <li>Web Development</li>
-        <li>Python Programming</li>
-        <li>AI & ML</li>
-        <li>Data Science</li>
-    </ul>
+<a href="gallery.html">Gallery</a>
 
-   <a href="register.html">
-    <button>Register Now</button>
-</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Learn Today, Lead Tomorrow</h1>
+
+<p>Empowering Students with Knowledge, Innovation and Practical Skills.</p>
+
+<a href="courses.html" class="btn">Explore Courses</a>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>Welcome to MANTRA Education Academy</h2>
+
+<p>
+
+We are dedicated to providing quality education through experienced faculty, practical learning, and modern teaching methods. Our goal is to prepare students for successful careers in today's competitive world.
+
+</p>
+
+</section>
+
+<section class="courses">
+
+<h2>Popular Courses</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Learn HTML, CSS, JavaScript and create responsive websites.</p>
+</div>
+
+<div class="card">
+<h3>Python Programming</h3>
+<p>Master Python programming from beginner to advanced level.</p>
+</div>
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>Explore AI, Machine Learning and Data Science technologies.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>MANTRA Education Academy</h2>
+
+<p>Learning Today • Leading Tomorrow</p>
+
+<br>
+
+<p>Email: support@mantraacademy.com</p>
+
+<p>Phone: +91-9876543210</p>
+
+<br>
+
+<p>© 2026 MANTRA Education Academy. All Rights Reserved.</p>
+
+</footer>
+
 </body>
 </html>
